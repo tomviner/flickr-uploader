@@ -223,7 +223,7 @@ class Uploadr:
         """
         d =  {
             "frob"            : FLICKR[ "frob" ],
-            "perms"           : "delete"
+            "perms"           : "write"
             }
         sig = self.signCall( d )
         url = self.urlGen( api.auth, d, sig )
