@@ -223,6 +223,8 @@ class Uploadr:
         """
         d =  {
             "frob"            : FLICKR[ "frob" ],
+            # The possible perms are read, write, delete. See step 4:
+            # https://www.flickr.com/services/api/auth.howto.desktop.html
             "perms"           : "write"
             }
         sig = self.signCall( d )
